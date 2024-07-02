@@ -164,7 +164,7 @@
 {
     #variable {battleSet} {1};
     battle;
-    #log a .tt/battleLog;
+    #log a ~/.tt/battleLog;
     #delay {bob} {#log off}{1}
 }
 
@@ -192,7 +192,7 @@
 
 #ALIAS {bcal}
 {
-    #script {python .tt/bcal.py $enemyradarCoords[1] $battleOnePosition}
+    #script {python ~/.tt/bcal.py $enemyradarCoords[1] $battleOnePosition}
 }
 
 #ALIAS {bcalc}

@@ -28,7 +28,7 @@
 
 #event {SESSION DISCONNECTED}
 {
-	#map write .tt/map
+	#map write ~/.tt/map
 }
 
 #var {MSDP_REPORTABLE_VARIABLES}

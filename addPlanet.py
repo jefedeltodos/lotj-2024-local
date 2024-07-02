@@ -10,7 +10,7 @@ colorVar = str(sys.argv[4])
 def insertPlanetIntoTable(planet, x, y, color):
     try:
 
-        sqliteConnection = sqlite3.connect('.tt/shipDatabase.db')
+        sqliteConnection = sqlite3.connect('~/.tt/shipDatabase.db')
             
         cursor = sqliteConnection.cursor()
             

@@ -7,7 +7,7 @@ import mpld3
 plt.rcParams["figure.figsize"] = (8.25, 8.25)
 #plt.rcParams['font.size'] = 16
 
-database = sqlite3.connect('.tt/shipDatabase.db')
+database = sqlite3.connect('~/.tt/shipDatabase.db')
 
 def graph_data():
 

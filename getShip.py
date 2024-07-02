@@ -13,7 +13,7 @@ characterVar = str(sys.argv[5])
 def insertVariableIntoTable(name, ship, dock, planet, date, character):
     try:
 
-        sqliteConnection = sqlite3.connect('.tt/shipDatabase.db')
+        sqliteConnection = sqlite3.connect('~/.tt/shipDatabase.db')
             
         cursor = sqliteConnection.cursor()
             

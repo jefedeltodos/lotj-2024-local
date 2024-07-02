@@ -38,7 +38,7 @@
           #variable {shipOwner} {"%%4"};
           #ticker {shipOwner} 
           {   
-            #script {python .tt/getShip.py $shipOwner $shipInfo $shipDock $shipPlanet $MSDP_CHARACTERNAME};
+            #script {python ~/.tt/getShip.py $shipOwner $shipInfo $shipDock $shipPlanet $MSDP_CHARACTERNAME};
             #unaction {Ship Owner: %%*};
             #untick shipOwner;
             #variable shipOwner {};

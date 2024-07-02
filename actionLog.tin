@@ -6,31 +6,31 @@
 #action {%1\x7BJedi %2\}{
     comm_window_show clan %1\x7BJedi %2\n;
     comm_window_draw_tabs;
-    #line log .tt/clan
+    #line log ~/.tt/clan
 } {7}
 
 #action {%1\x7BAntarian Rangers%2\}{
     comm_window_show clan %1\x7BAntarian Rangers%2\n;
     comm_window_draw_tabs;
-    #line log .tt/clan
+    #line log ~/.tt/clan
 } {7}
 
 #action {%1\x7BArchives %2\}{
     comm_window_show clan %1\x7BJedi %2\n;
     comm_window_draw_tabs;
-    #line log .tt/clan
+    #line log ~/.tt/clan
 } {7}
 
 #ACTION {~%1CommNet %2}
 {
     comm_window_show comm %1CommNet %2\n;
     comm_window_draw_tabs;
-    #line log .tt/com;
+    #line log ~/.tt/com;
 #nop    #line gag
 } {7}
 
 #ACTION {^You wake and climb quickly to your feet.$}{
-	#delay {2} {#read .tt/character.tin}
+	#delay {2} {#read ~/.tt/character.tin}
 }
 
 #nop #ACTION {A taxi picks you up and drives you to a safe location.}
@@ -42,7 +42,7 @@
 {
     comm_window_show ooc %0\n;
     comm_window_draw_tabs;
-    #line log .tt/ooc.tin;
+    #line log ~/.tt/ooc.tin;
     #line gag
 }
 {3}
@@ -56,7 +56,7 @@
 {
     comm_window_show broadcasts %0\n;
     comm_window_draw_tabs;
-    #line log .tt/broadcasts.tin
+    #line log ~/.tt/broadcasts.tin
 }
 
 #ACTION {Nah... You feel too relaxed...}
@@ -73,7 +73,7 @@
 {
     comm_window_show say %1 ask%2\n;
     comm_window_draw_tabs;
-    #line log .tt/say.tin
+    #line log ~/.tt/say.tin
 } {3}
 
 #ACTION {%1buzzes%2}
@@ -81,21 +81,21 @@
 
     comm_window_show comm %1 buzzes%2\n;
     comm_window_draw_tabs;
-    #line log .tt/com.tin
+    #line log ~/.tt/com.tin
 }
 
 #nop #ACTION {%1 say%2}
 {
     comm_window_show say %1 say%2\n;
     comm_window_draw_tabs;
-    #line log .tt/say.tin
+    #line log ~/.tt/say.tin
 } {3}
 
 #nop #ACTION {%1whisp%2}
 {
     comm_window_show say %1whisper%2\n;
     comm_window_draw_tabs;
-    #line log .tt/say.tin
+    #line log ~/.tt/say.tin
 }
 
 #ACTION {%1 %2 (good)}
@@ -138,7 +138,7 @@
 {
     comm_window_show say %1 %2;
     comm_window_draw_tabs;
-    #line log .tt/clan.tin
+    #line log ~/.tt/clan.tin
     
 }
 
@@ -146,7 +146,7 @@
 {
     comm_window_show say %1 %2;
     comm_window_draw_tabs;
-    #line log .tt/clan.tin
+    #line log ~/.tt/clan.tin
     
 }
 
@@ -199,14 +199,14 @@
 {
     comm_window_show ooc %1IMM%2;
     comm_window_draw_tabs;
-    #line log .tt/ooc.tin;
+    #line log ~/.tt/ooc.tin;
 }
 
 #ACTION {%1NEWBIE%2}
 {
     comm_window_show ooc %1 %2;
     comm_window_draw_tabs;
-    #line log .tt/ooc.tin;
+    #line log ~/.tt/ooc.tin;
     #line gag
 }
 
@@ -214,7 +214,7 @@
 {
     comm_window_show ooc %1 %2;
     comm_window_draw_tabs;
-    #line log .tt/ooc.tin;
+    #line log ~/.tt/ooc.tin;
     #line gag
 }
 
@@ -222,7 +222,7 @@
 {
     comm_window_show ooc %2;
     comm_window_draw_tabs;
-    #line log .tt/ooc.tin;
+    #line log ~/.tt/ooc.tin;
     #line gag
 }
 
@@ -230,14 +230,14 @@
 {
     comm_window_show say %1;
     comm_window_draw_tabs;
-    #line log .tt/say.tin
+    #line log ~/.tt/say.tin
 }
 
 #nop #ACTION {[INTERCOM: %1}
 {
     comm_window_show say %1\n;
     comm_window_draw_tabs;
-    #line log .tt/ooc.tin;
+    #line log ~/.tt/ooc.tin;
     #line gag
 }
 

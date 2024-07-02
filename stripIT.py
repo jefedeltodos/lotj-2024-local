@@ -2,7 +2,7 @@
 
 import re
 
-fileImport = open(".tt/radarList.tin")
+fileImport = open("~/.tt/radarList.tin")
 
 global x,y,z,shipName
 

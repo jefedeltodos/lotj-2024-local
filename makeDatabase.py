@@ -4,7 +4,7 @@
 
 import sqlite3
 
-conn = sqlite3.connect('.tt/shipDatabase.db')
+conn = sqlite3.connect('~/.tt/shipDatabase.db')
 
 curr = conn.cursor()
 

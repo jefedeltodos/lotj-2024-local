@@ -1,4 +1,4 @@
 gitpull
 source ~/.tt/bin/activate
-tt++ .tt/jedi.tin
+tt++ ~/.tt/jedi.tin
 gitpush

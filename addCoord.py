@@ -10,7 +10,7 @@ idVar = "."
 def insertCoordIntoTable(x, y, color, id):
     try:
 
-        sqliteConnection = sqlite3.connect('.tt/shipDatabase.db')
+        sqliteConnection = sqlite3.connect('~/.tt/shipDatabase.db')
             
         cursor = sqliteConnection.cursor()
             

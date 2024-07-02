@@ -4,7 +4,7 @@
   {
     #if {"$logging" != "on"}
     {
-      #format {logfile} {.tt/logFiles/%t.html} {%Y-%m-%d};
+      #format {logfile} {~/.tt/logFiles/%t.html} {%Y-%m-%d};
       #log append $logfile;
       #variable logging on
     };

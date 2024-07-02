@@ -5,7 +5,7 @@
 import sqlite3
 import sys
 
-database = sqlite3.connect('.tt/shipDatabase.db')
+database = sqlite3.connect('~/.tt/shipDatabase.db')
 
 inputVar = str(sys.argv[1])
 inputVar2 = str(sys.argv[2])

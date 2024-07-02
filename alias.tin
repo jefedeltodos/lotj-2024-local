@@ -1,6 +1,6 @@
 #ALIAS {action}
 {
-    #read .tt/%1.tin;
+    #read ~/.tt/%1.tin;
     #echo {You have loaded %1};
     #variable {action} {%1}
 }
@@ -70,7 +70,7 @@
 #ALIAS {build}
 {
     #session jedi legendsofthejedi.com 5600;
-    #read .tt/log;
+    #read ~/.tt/log;
     log on;
     lithium
 }
@@ -84,7 +84,7 @@
 {
     radar;
     #showme {calc %1 $enemyradarCoords[1]};
-    #script {python .tt/calc.py %1 $enemyradarCoords[1]}
+    #script {python ~/.tt/calc.py %1 $enemyradarCoords[1]}
 }
 
 #ALIAS {capt}
@@ -95,7 +95,7 @@
 #ALIAS {cargoon}
 {
     $fillcargo;
-    #read .tt/cargo.tin
+    #read ~/.tt/cargo.tin
 }
 
 #ALIAS {cb}
@@ -131,14 +131,14 @@
 #alias {clearmap}
 {
     #variable plusMinus {};
-    #script {python .tt/clearmap.py};
+    #script {python ~/.tt/clearmap.py};
     graphit
 }
 
 #ALIAS {jedi}
 {
     #session jedi legendsofthejedi.com 5656;
-    #read .tt/log;
+    #read ~/.tt/log;
     log on
 }
 
@@ -358,7 +358,7 @@
 #ALIAS {fleet}
 {
     fleetradar targets;
-    #log a .tt/fleetradar;
+    #log a ~/.tt/fleetradar;
     #delay {bob} {#log off}{1}
 }
 
@@ -400,7 +400,7 @@
 
 #alias {graphit}
 {
-    #script {python .tt/graphCoord.py}
+    #script {python ~/.tt/graphCoord.py}
 }
 
 #ALIAS {halt}
@@ -536,8 +536,8 @@
 
 #alias {listship} 
 {
-    #read .tt/locate.tin;
-    #script {python .tt/getShipInfo.py %1 %2 %3}
+    #read ~/.tt/locate.tin;
+    #script {python ~/.tt/getShipInfo.py %1 %2 %3}
 }
 
 #ALIAS {lix}
@@ -631,7 +631,7 @@
 
 #alias {markit}
 {
-    #script {python .tt/addCoord.py %1 %2 black};
+    #script {python ~/.tt/addCoord.py %1 %2 black};
     graphit
 }
 
@@ -764,44 +764,44 @@
     #action {^Uncharted space$} 
     {
         log off;
-        #log overwrite .tt/radarList.tin;
+        #log overwrite ~/.tt/radarList.tin;
         #delay {1} 
         {
             log off;
-            #read .tt/log.tin;
+            #read ~/.tt/log.tin;
             log on;
 	    #unaction {^Uncharted space$};
             #unaction {%*Sector%*};
             #unaction {%*System%*};
-            #script {python .tt/radarList.py}
+            #script {python ~/.tt/radarList.py}
         }
     };
     #action {%*Sector$} 
     {
         log off;
-        #log overwrite .tt/radarList.tin;
+        #log overwrite ~/.tt/radarList.tin;
         #delay {1} 
         {
             log off;
-            #read .tt/log.tin;
+            #read ~/.tt/log.tin;
             log on;
             #unaction {%*Sector$};
             #unaction {%*System$};
-            #script {python .tt/radarList.py}
+            #script {python ~/.tt/radarList.py}
         }
     };
     #action {%*System$} 
     {
         log off;
-        #log overwrite .tt/radarList.tin;
+        #log overwrite ~/.tt/radarList.tin;
         #delay {1}
         {
             log off;
-            #read .tt/log;
+            #read ~/.tt/log;
             log on;
             #unaction {%*Sector$};
             #unaction {%*System$};
-            #script {python .tt/radarList.py}
+            #script {python ~/.tt/radarList.py}
         }
     }
 }

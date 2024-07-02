@@ -48,7 +48,7 @@ p.xgrid.grid_line_color = "white"
 # change things only on the Y-grid
 p.ygrid.grid_line_color = "white"
 
-conn = sqlite3.connect('.tt/shipDatabase.db')
+conn = sqlite3.connect('~/.tt/shipDatabase.db')
 
 c = conn.cursor()
 

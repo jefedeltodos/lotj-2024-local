@@ -80,14 +80,14 @@
 {
 #nop	#ses mapper localhost 4051;
 #nop	#ses 1;
-	#map read .tt/map;
+	#map read ~/.tt/map;
 	#map flag vtmap on;
 	#map goto $MSDP_ROOMVNUM
 }
 
 #alias {savemap}
 {
-	#map write .tt/map;
+	#map write ~/.tt/map;
 	#echo {SAVING map};
 }
 

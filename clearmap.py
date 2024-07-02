@@ -1,6 +1,6 @@
 import sqlite3
 
-sqliteConnection = sqlite3.connect('.tt/shipDatabase.db');
+sqliteConnection = sqlite3.connect('~/.tt/shipDatabase.db');
 def dropTables():
     
     try:
@@ -20,7 +20,7 @@ def dropTables():
         print("#showme Failed to insert Python variable into sqlite table", error)
     
     finally:
-        conn = sqlite3.connect('.tt/shipDatabase.db')
+        conn = sqlite3.connect('~/.tt/shipDatabase.db')
 
         curr = conn.cursor()
 

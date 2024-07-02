@@ -1,4 +1,4 @@
-#read .tt/sector.tin
+#read ~/.tt/sector.tin
 
 #variable {spiVar} {0}
 

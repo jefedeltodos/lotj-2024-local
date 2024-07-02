@@ -4,7 +4,7 @@
 
 #EVENT {PROGRAM START}
 {
-    #class worlddata read .tt/worlddata.tin;
+    #class worlddata read ~/.tt/worlddata.tin;
     #if {&{worldlist} == 0}
     {
         #class worlddata open;
@@ -13,16 +13,16 @@
     };
     
     #info system save;
-    #script {dir} {ls -d .tt/archive};
+    #script {dir} {ls -d ~/.tt/archive};
     #if {&dir[] == 0}
     {
-          #system mkdir .tt/archive;
+          #system mkdir ~/.tt/archive;
           #showme {<ffa>Created the <afa>archive<ffa> folder.}
     };
-    #script {dir} {ls -d .tt/archive/bin};
+    #script {dir} {ls -d ~/.tt/archive/bin};
     #if {&dir[] == 0}
     {
-          #system mkdir .tt/archive/bin;
+          #system mkdir ~/.tt/archive/bin;
           #showme {<ffa>Created the <afa>archive/bin<ffa> folder.}
     };
     #draw {light orange} box 0 1 3 50 {<afa>TinTin++ $info[SYSTEM][CLIENT_VERSION] beta updater.};
@@ -87,7 +87,7 @@ source code}{<ffa><afa> install<ffa>: install downloaded source code}{<ffa><afa>
         {
             #showme The world %1 (%2 %3) has been added.
         };
-        #class worlddata write .tt/worlddata.tin
+        #class worlddata write ~/.tt/worlddata.tin
     }
 }
 
